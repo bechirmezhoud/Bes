@@ -1,0 +1,101 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  right: 0;
+  bottom: 0;
+}
+body {
+  margin: 0;
+}
+
+@keyframes Fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes Rayon {
+  from {
+    rayon: 90%;
+  }
+  to {
+    rayon: 100%;
+  }
+}
+
+.marker {
+  transform: translate(-50%, -100%);
+  animation: Fade 1s;
+}
+.marker path {
+  fill: rgb(19, 119, 212);
+  animation: Fade 0.5s;
+}
+
+.form-btn {
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: radial-gradient(
+    166.67% 2021.63% at 0% 13.73%,
+    #5fb2ff 0%,
+    #0085ff 100%
+  );
+  box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 70px;
+  min-width: 40%;
+}
+
+.Addbtn {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+.AddSign {
+  font-family: "Roboto";
+  font-size: 4rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: bold;
+
+  text-align: center;
+  color: rgb(190, 190, 190);
+}
+
+.form-btn input[type="number"],
+input[type="text"],
+input[type="submit"],
+textarea {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  border: 0;
+  height: 2rem;
+  width: 50vw;
+  margin: 1rem;
+
+  text-indent: 10px;
+  font-size: 1.25rem;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-decoration-color: #0243f7;
+  color: rgb(53, 90, 212), white;
+  border-color: #0085ff;
+}
+
+.form-btn input[type="radio"] {
+  color: red;
+}
+
+.form-btn textarea {
+  height: 4rem;
+  border-radius: 10px;
+}
